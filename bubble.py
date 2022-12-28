@@ -47,11 +47,21 @@ def whileelse():
             break
     else:
         print("else")
-tesiLi = [1,3,5,6]
+tesiLi = [1,2,3,5,6]
 testVal = 2
 
 
-a = binarySearch(tesiLi,testVal)
+# a = binarySearch(tesiLi,testVal)
+# print(a)
+
+def test(li,targetval):
+    for i in li:
+        if i == targetval:
+            return True
+    return False
+
+a = test(tesiLi,testVal)
+
 print(a)
 
 
