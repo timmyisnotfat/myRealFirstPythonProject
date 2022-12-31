@@ -40,7 +40,7 @@ def partition(li, l, r):
         else:
             break
     li[right+1], li[r] = pivot, li[right+1]
-    return (left + right + 1) // 2
+    return (left + right + 1) // 2 #应对一长串2 防止递归太深
 
 def quickSortlearn(li, left, right):
     if right - left > 0:
@@ -53,7 +53,7 @@ def quickSortlearn(li, left, right):
 
 
 def sortArray(nums):
-        random.shuffle(nums)
+        random.shuffle(nums) #随机取数 应对垃圾array例子
         quickSortlearn(nums,0,len(nums)-1)
         return nums
 
