@@ -22,6 +22,7 @@ def creatTail(li):
     head = Node(li[0])
     tail = head
     # Why tail = Node(li[0]) do not work?
+    #
     for elem in li[1:]:
         node = Node(elem)
         tail.next = node
